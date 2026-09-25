@@ -7,9 +7,33 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "intro-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Montessori book that captivates kids and gives parents a well-deserved break.",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "top-image"
+    "top-image",
+    "intro-text"
   ]
 }
