@@ -1,0 +1,202 @@
+<div class="ml-trust-badges">
+
+  <div class="ml-trust-badges__top">
+
+    <div class="ml-trust-badge">
+      <span class="ml-trust-badge__check" aria-hidden="true">✓</span>
+      <span class="ml-trust-badge__text">Certifié CE</span>
+    </div>
+
+    <div class="ml-trust-badge">
+      <span class="ml-trust-badge__check" aria-hidden="true">✓</span>
+      <span class="ml-trust-badge__text">6 mois – 5 ans</span>
+    </div>
+
+    <div class="ml-trust-badge">
+      <span class="ml-trust-badge__check" aria-hidden="true">✓</span>
+      <span class="ml-trust-badge__text">Livre Montessori</span>
+    </div>
+
+  </div>
+
+  <div class="ml-gift-badge">
+    <span class="ml-gift-badge__icon" aria-hidden="true">🎁</span>
+    <span class="ml-gift-badge__text">Le cadeau préféré des Loulous</span>
+  </div>
+
+</div>
+
+<style>
+  .ml-trust-badges {
+    width: calc(100% - 32px);
+    max-width: 520px;
+    margin: 14px auto;
+    font-family: inherit;
+  }
+
+  .ml-trust-badges__top {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .ml-trust-badge {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    padding: 7px 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    background: #ffffff;
+    border: 1.5px solid #1e1e1e;
+    border-radius: 9px;
+    box-sizing: border-box;
+  }
+
+  .ml-trust-badge__check {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background: #42b96c;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .ml-trust-badge__text {
+    color: #1e1e1e;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .ml-gift-badge {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    min-height: 46px;
+    margin-top: 7px;
+    padding: 8px 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    background: linear-gradient(
+      100deg,
+      #F8F6F2 0%,
+      #EAF6FC 38%,
+      #FCEEF3 100%
+    );
+
+    border: 1.5px solid #A8D8F0;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    box-shadow:
+      0 3px 10px rgba(30, 30, 30, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .ml-gift-badge::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18%;
+    width: 32%;
+    height: 100%;
+
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.45),
+      transparent
+    );
+
+    transform: skewX(-20deg);
+    pointer-events: none;
+  }
+
+  .ml-gift-badge__icon {
+    position: relative;
+    z-index: 1;
+
+    flex: 0 0 auto;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .ml-gift-badge__text {
+    position: relative;
+    z-index: 1;
+
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: -0.1px;
+  }
+
+  @media screen and (max-width: 749px) {
+
+    .ml-trust-badges {
+      width: calc(100% - 24px);
+      max-width: 430px;
+      margin: 12px auto;
+    }
+
+    .ml-trust-badges__top {
+      gap: 5px;
+    }
+
+    .ml-trust-badge {
+      min-height: 40px;
+      padding: 6px 4px;
+      gap: 4px;
+      border-radius: 8px;
+    }
+
+    .ml-trust-badge__check {
+      width: 18px;
+      height: 18px;
+      flex-basis: 18px;
+      font-size: 13px;
+    }
+
+    .ml-trust-badge__text {
+      font-size: 10.5px;
+    }
+
+    .ml-gift-badge {
+      min-height: 42px;
+      padding: 7px 10px;
+      border-radius: 9px;
+    }
+
+    .ml-gift-badge__icon {
+      font-size: 19px;
+    }
+
+    .ml-gift-badge__text {
+      font-size: 14.5px;
+    }
+  }
+</style>
