@@ -14,8 +14,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "The Montessori book that captivates kids and gives parents a well-deserved break.",
-            "heading_size": "h1"
+            "heading": "<strong>The Montessori book that captivates kids and gives parents a well-deserved break.</strong>",
+            "heading_size": "h2"
           }
         }
       },
